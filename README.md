@@ -192,13 +192,15 @@ b = a       = 6c7af7b7
 a = T1 + T2 = 75bad534 + f7e6ea32 = 6da1bf66
 
 Compression Cycle [2]
+
 T1 = h + Sigma_S1(e) + Ch(e,f,g) + K[2] + W[2]
-   = 9b05688c + Sigma_S1(b229c8a6) + Ch(b229c8a6,093a520c,510e527f) + b5c0fbcf + 7067612e
-   = 
+   = 9b05688c + Sigma_S1(b229c8a6) + Ch(b229c8a6,093a520c,510e527f) + b5c0fbcf + 7067612e  
+
 T2 = Sigma_S0(a) + Maj(a,b,c)
-   = Sigma_S0(6da1bf66) + Maj(6da1bf66,6c7af7b7,6a09e667)
-   =
-Update register:
+   = Sigma_S0(6da1bf66) + Maj(6da1bf66,6c7af7b7,6a09e667)  
+
+Update register:  
+
 h = g       = 510e527f
 g = f       = 093a520c
 f = e       = b229c8a6
