@@ -1,27 +1,28 @@
 SOURCES_V := \
-	../00_src/Ch.v \
-	../00_src/Maj.v \
-	../00_src/sha2_round.v \
-	../00_src/sha256_block.v \
-	../00_src/sha256_K_machine.v \
-	../00_src/sha256_round.v \
-	../00_src/sha256_S0.v \
-	../00_src/sha256_S1.v \
-	../00_src/W_machine.v \
-	../00_src/sha256_sigma0.v \
-	../00_src/sha256_sigma1.v \
-	../01_tb/sha256_block_tb.v \
-	../01_tb/W_machine_tb.v \
+	../hdl/arbiter.v \
+	../hdl/Ch.v \
+	../hdl/compress_sigma0.v \
+	../hdl/compress_sigma1.v \
+	../hdl/compression_round.v \
+	../hdl/compression.v \
+	../hdl/controller.v \
+	../hdl/hash_mem.v \
+	../hdl/K_const.v \
+	../hdl/Maj.v \
+	../hdl/ME_sigma0.v \
+	../hdl/ME_sigma1.v \
+	../hdl/message_expansion.v \
+	../hdl/msg_mem.v \
+	../hdl/sha256_block.v \
+	../hdl/sha256_core.v \
+	../01_tb/sha256_core_tb.v \
 
-#SOURCES_V := \
-	../00_src/W_machine.v \
-	../01_tb/W_machine_tb.v \
 
 COMP_OPTS_V := \
 	--incr \
 	--relax \
 
-TB_TOP := sha256_block_tb
+TB_TOP := sha256_core_tb
 #TB_TOP := W_machine_tb
 
 #==== Default target - running simulation without drawing waveforms ====#

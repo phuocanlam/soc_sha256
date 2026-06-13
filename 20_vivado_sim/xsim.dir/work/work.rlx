@@ -1,0 +1,21 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/1_FPGA/1_SoC_Course/soc_sha256/01_tb/sha256_core_tb.v,1780823793,verilog,,,,sha256_core_tb,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/Ch.v,1780153989,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/compress_sigma0.v,,Ch,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/K_const.v,1780153913,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/Maj.v,,K_const,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/ME_sigma0.v,1780152865,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/ME_sigma1.v,,ME_sigma0,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/ME_sigma1.v,1780152915,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/message_expansion.v,,ME_sigma1,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/Maj.v,1780153986,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/ME_sigma0.v,,Maj,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/arbiter.v,1780827974,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/Ch.v,,arbiter,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/compress_sigma0.v,1780153988,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/compress_sigma1.v,,compress_sigma0,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/compress_sigma1.v,1780153900,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/compression_round.v,,compress_sigma1,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/compression.v,1780153561,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/controller.v,,compression,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/compression_round.v,1780154079,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/compression.v,,compression_round,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/controller.v,1780827567,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/hash_mem.v,,controller,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/hash_mem.v,1780822638,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/K_const.v,,hash_mem,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/message_expansion.v,1780155057,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/msg_mem.v,,message_expansion,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/msg_mem.v,1780822782,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/sha256_block.v,,msg_mem,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/sha256_block.v,1780155791,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/sha256_core.v,,sha256_block,,,,,,,,
+D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/sha256_core.v,1780825169,verilog,,D:/1_FPGA/1_SoC_Course/soc_sha256/01_tb/sha256_core_tb.v,,sha256_core,,,,,,,,

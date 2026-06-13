@@ -1,6 +1,6 @@
 // Compression Round
 // S1(x) = RotR6(x) xor RotR11(x) xor RotR25(x)
-module sha256_S1(
+module compress_sigma1(
     input  wire [31:0] x_i,
     output wire [31:0] S1_o
 );

@@ -1,0 +1,1 @@
+-debug "all" -top "sha256_core_tb" -snapshot "sha256_core_tb_snapshot" 

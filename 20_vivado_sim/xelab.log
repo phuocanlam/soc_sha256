@@ -1,0 +1,30 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe -debug all -top sha256_core_tb -snapshot sha256_core_tb_snapshot 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 6 for port 'raddr_i' [D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/sha256_core.v:82]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'Arbiter_hash256_raddr_i' [D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/sha256_core.v:169]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.arbiter(BUS_RA_WIDTH=6)
+Compiling module work.controller(BUS_RA_WIDTH=6)
+Compiling module work.msg_mem
+Compiling module work.message_expansion
+Compiling module work.ME_sigma0
+Compiling module work.ME_sigma1
+Compiling module work.K_const
+Compiling module work.Ch(WORD_WIDTH=32)
+Compiling module work.Maj(WORD_WIDTH=32)
+Compiling module work.compress_sigma0
+Compiling module work.compress_sigma1
+Compiling module work.compression
+Compiling module work.compression_round
+Compiling module work.sha256_block
+Compiling module work.hash_mem(ADDR_WIDTH=4)
+Compiling module work.sha256_core
+Compiling module work.sha256_core_tb
+Built simulation snapshot sha256_core_tb_snapshot

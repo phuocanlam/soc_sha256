@@ -1,5 +1,5 @@
 // a machine that delivers round constants
-module K_machine(
+module K_const (
     input           clk_i,
     input           rst_i,
     output [31:0]   K_o

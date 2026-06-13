@@ -9,11 +9,11 @@ module W_machine #(
     output [WORDSIZE-1:0]       W_tm2_o, W_tm15_o,
     output [WORDSIZE-1:0]       W_o
 );
-    wire [WORDSIZE-1:0]     W_tm7_w;
-    wire [WORDSIZE-1:0]     W_tm16_w;
-    wire [WORDSIZE-1:0]     Wt_next;
-    reg  [WORDSIZE*16-1:0]  W_stack_q;
-    wire [WORDSIZE*16-1:0]  W_stack_d;
+    wire [WORDSIZE-1:0]         W_tm7_w;
+    wire [WORDSIZE-1:0]         W_tm16_w;
+    wire [WORDSIZE-1:0]         Wt_next;
+    reg  [WORDSIZE*16-1:0]      W_stack_q;
+    wire [WORDSIZE*16-1:0]      W_stack_d;
     // W(t-n) values, from the perspective of Wt_next
     assign W_tm2_o  = W_stack_q[WORDSIZE*2-1:WORDSIZE*1];
     assign W_tm15_o = W_stack_q[WORDSIZE*15-1:WORDSIZE*14];

@@ -1,0 +1,34 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/arbiter.v" into library work
+INFO: [VRFC 10-311] analyzing module arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/Ch.v" into library work
+INFO: [VRFC 10-311] analyzing module Ch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/compress_sigma0.v" into library work
+INFO: [VRFC 10-311] analyzing module compress_sigma0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/compress_sigma1.v" into library work
+INFO: [VRFC 10-311] analyzing module compress_sigma1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/compression_round.v" into library work
+INFO: [VRFC 10-311] analyzing module compression_round
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/compression.v" into library work
+INFO: [VRFC 10-311] analyzing module compression
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/controller.v" into library work
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/hash_mem.v" into library work
+INFO: [VRFC 10-311] analyzing module hash_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/K_const.v" into library work
+INFO: [VRFC 10-311] analyzing module K_const
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/Maj.v" into library work
+INFO: [VRFC 10-311] analyzing module Maj
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/ME_sigma0.v" into library work
+INFO: [VRFC 10-311] analyzing module ME_sigma0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/ME_sigma1.v" into library work
+INFO: [VRFC 10-311] analyzing module ME_sigma1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/message_expansion.v" into library work
+INFO: [VRFC 10-311] analyzing module message_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/msg_mem.v" into library work
+INFO: [VRFC 10-311] analyzing module msg_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/sha256_block.v" into library work
+INFO: [VRFC 10-311] analyzing module sha256_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/hdl/sha256_core.v" into library work
+INFO: [VRFC 10-311] analyzing module sha256_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1_FPGA/1_SoC_Course/soc_sha256/01_tb/sha256_core_tb.v" into library work
+INFO: [VRFC 10-311] analyzing module sha256_core_tb
