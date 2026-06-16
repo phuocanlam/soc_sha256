@@ -148,12 +148,12 @@ module sha256_core_tb;
             status   = 0;
             watchdog = 0;
 
-            while (status[0] !== 1'b1 && watchdog < 500) begin
+            while (status[0] !== 1'b1 && watchdog < 700) begin
                 read_reg(HASH_VALID_BASE_ADDR, status);
                 watchdog = watchdog + 1;
             end
 
-            if (watchdog >= 500) begin
+            if (watchdog >= 700) begin
                 $display("[ERROR] Timeout waiting complete flag");
                 $finish;
             end

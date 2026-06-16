@@ -2,24 +2,29 @@
 # xsim v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sun Jun  7 17:27:03 2026
-# Process ID: 8928
-# Current directory: D:/1_FPGA/1_SoC_Course/soc_sha256/20_vivado_sim
+# Start of session at: Mon Jun 15 17:42:02 2026
+# Process ID: 7296
+# Current directory: C:/Users/Apple/Desktop/Pine_Apple/SoC/final_project/soc_sha256/20_vivado_sim
 # Command line: xsim.exe -source {xsim.dir/sha256_core_tb_snapshot.wdb/xsim_script.tcl}
-# Log file: D:/1_FPGA/1_SoC_Course/soc_sha256/20_vivado_sim/xsim.log
-# Journal file: D:/1_FPGA/1_SoC_Course/soc_sha256/20_vivado_sim\xsim.jou
-# Running On: Pineapple, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 2, Host memory: 8476 MB
+# Log file: C:/Users/Apple/Desktop/Pine_Apple/SoC/final_project/soc_sha256/20_vivado_sim/xsim.log
+# Journal file: C:/Users/Apple/Desktop/Pine_Apple/SoC/final_project/soc_sha256/20_vivado_sim\xsim.jou
+# Running On: DESKTOP-6BT0HJ2, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 2, Host memory: 16765 MB
 #-----------------------------------------------------------
 start_gui
 source xsim.dir/sha256_core_tb_snapshot.wdb/xsim_script.tcl
 # set_param project.enableReportConfiguration 0
 # load_feature core
 # current_fileset
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
@@ -58,19 +63,9 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 avail
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
-current_fileset: Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 1006.605 ; gain = 258.512
+current_fileset: Time (s): cpu = 00:00:28 ; elapsed = 00:00:13 . Memory (MB): peak = 1011.426 ; gain = 203.277
 # xsim {sha256_core_tb_snapshot.wdb} -autoloadwcfg
-add_wave {{/sha256_core_tb/CLK}} {{/sha256_core_tb/RST}} 
-current_wave_config {Untitled 1}
-Untitled 1
-add_wave {{/sha256_core_tb/dut/hash_valid_flag_w}} 
-current_wave_config {Untitled 1}
-Untitled 1
-add_wave {{/sha256_core_tb/dut/Arbiter_hash256_arvalid_w}} 
-current_wave_config {Untitled 1}
-Untitled 1
-add_wave {{/sha256_core_tb/dut/u_arbiter/Arbiter_hash256_arvalid_o}} 
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting xsim at Mon Jun  8 07:36:14 2026...
+INFO: [Common 17-206] Exiting xsim at Mon Jun 15 17:43:25 2026...

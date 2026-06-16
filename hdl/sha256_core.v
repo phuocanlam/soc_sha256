@@ -158,7 +158,7 @@ module sha256_core #(
     // Hash256 Memory
     //==================================================
     hash_mem #(
-        .ADDR_WIDTH                 (ADDR_WIDTH),
+        .ADDR_WIDTH                 (HASH_MEM_A_WIDTH),
         .DATA_WIDTH                 (DATA_WIDTH),
         .MEM_DEPTH                  (HASH_MEM_DEPTH), 
         .HASH_WIDTH                 (HASH_WIDTH)

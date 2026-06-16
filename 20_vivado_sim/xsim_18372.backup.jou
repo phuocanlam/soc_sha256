@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Jun 15 17:37:16 2026
+# Process ID: 18372
+# Current directory: C:/Users/Apple/Desktop/Pine_Apple/SoC/final_project/soc_sha256/20_vivado_sim
+# Command line: xsim.exe -source {xsim.dir/sha256_core_tb_snapshot.wdb/xsim_script.tcl}
+# Log file: C:/Users/Apple/Desktop/Pine_Apple/SoC/final_project/soc_sha256/20_vivado_sim/xsim.log
+# Journal file: C:/Users/Apple/Desktop/Pine_Apple/SoC/final_project/soc_sha256/20_vivado_sim\xsim.jou
+# Running On: DESKTOP-6BT0HJ2, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 2, Host memory: 16765 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/sha256_core_tb_snapshot.wdb/xsim_script.tcl
+add_wave {{/sha256_core_tb/CLK}} {{/sha256_core_tb/RST}} 
+current_wave_config {Untitled 1}
+add_wave {{/sha256_core_tb/dut/awvalid_i}} {{/sha256_core_tb/dut/waddr_i}} {{/sha256_core_tb/dut/wdata_i}} {{/sha256_core_tb/dut/arvalid_i}} {{/sha256_core_tb/dut/raddr_i}} 
+current_wave_config {Untitled 1}
+add_wave {{/sha256_core_tb/dut/u_hash_mem/hash256_valid_i}} 
+current_wave_config {Untitled 1}
+add_wave {{/sha256_core_tb/dut/u_hash_mem/hash_reg_array}} 
+current_wave_config {Untitled 1}
+add_wave {{/sha256_core_tb/dut/u_hash_mem/Arbiter_hash256_rdata_o}} 
+current_wave_config {Untitled 1}
+add_wave {{/sha256_core_tb/raddr_i}} {{/sha256_core_tb/rdata_o}} 
+current_wave_config {Untitled 1}
+add_wave {{/sha256_core_tb/dut/u_arbiter/rdata_o}} 
+current_wave_config {Untitled 1}
+add_wave {{/sha256_core_tb/dut/u_arbiter/Arbiter_hash256_rdata_i}} 
+close_sim

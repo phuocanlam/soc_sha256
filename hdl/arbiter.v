@@ -58,10 +58,14 @@ module arbiter #(
     localparam HASH_MEM_BASE_ADDR   = 1;
 
     //----------------------------------------------//
+    //               Wire Declaration               //
+    //----------------------------------------------//
+
+    //----------------------------------------------//
     //               Reg Declaration                //
     //----------------------------------------------//
-    reg									arvalid_r;
-	reg [BUS_RA_WIDTH-1:0]              raddr_r;
+    reg						        arvalid_r;
+	reg [BUS_RA_WIDTH-1:0]          raddr_r;
 
     //----------------------------------------------//
     //            Combinational Circuit             //
@@ -79,21 +83,21 @@ module arbiter #(
     // To HASH Output Memory
     assign Arbiter_hash256_arvalid_o  = (arvalid_i && 
                                         (state_i == s_READ) && 
-                                        raddr_i[BUS_RA_WIDTH-1:3] == HASH_MEM_BASE_ADDR) ? 1'b1: 1'b0;
+                                        (raddr_i[3] == HASH_MEM_BASE_ADDR)) ? 1'b1: 1'b0;
 
 	assign Arbiter_hash256_raddr_o	  = raddr_i[HASH_MEM_A_WIDTH-1:0];
 
     always @(posedge clk_i or negedge rstn_i) begin
 		if (!rstn_i) begin
 			arvalid_r <= 0;
-			raddr_r   <= 0;
+			raddr_r   <= {BUS_RA_WIDTH{1'b0}};;
         end else begin
 			arvalid_r <= arvalid_i;
 			raddr_r   <= raddr_i;	
 		end		
 	end
 
-    assign rdata_o = (arvalid_r && raddr_r[BUS_RA_WIDTH-1:3] == HASH_MEM_BASE_ADDR) ? Arbiter_hash256_rdata_i : {31'h0, hash_valid_flag_i};
+    assign rdata_o = (arvalid_r && raddr_r[3] == HASH_MEM_BASE_ADDR) ? Arbiter_hash256_rdata_i : {31'h0, hash_valid_flag_i};
 
     // ila_arbiter u_ila_arbiter (
     //     .clk                    (clk_i),

@@ -27,6 +27,7 @@ module sha256_block (
     wire [31:0]     Wtm2_w, sig0_Wtm15_w, sig1_Wtm2_w, Wtm15_w;
     wire [31:0]     Wj_w, Kj_w;
     wire [31:0]     a_d_w, b_d_w, c_d_w, d_d_w, e_d_w, f_d_w, g_d_w, h_d_w;
+    wire            is_processing;
 
     //==============================================================//
     // Register Declaration                                         //
@@ -83,8 +84,13 @@ module sha256_block (
         .h_out(h_d_w)
     );
 
-    always @(posedge clk_i) begin
-        if (M_valid_i) begin
+    assign is_processing = (round_r < 7'd64);
+    always @(posedge clk_i or negedge rstn_i) begin
+        if (!rstn_i) begin
+            round_r <= 7'd64;
+            a_q_r   <= 32'h0; b_q_r <= 32'h0; c_q_r <= 32'h0; d_q_r <= 32'h0;
+            e_q_r   <= 32'h0; f_q_r <= 32'h0; g_q_r <= 32'h0; h_q_r <= 32'h0;
+        end else if (M_valid_i) begin
             a_q_r   <= H0_INIT;
             b_q_r   <= H1_INIT;
             c_q_r   <= H2_INIT;
@@ -93,8 +99,8 @@ module sha256_block (
             f_q_r   <= H5_INIT;
             g_q_r   <= H6_INIT;
             h_q_r   <= H7_INIT;
-            round_r <= 0;
-        end else begin
+            round_r <= 7'd0;
+        end else if (is_processing) begin
             a_q_r   <= a_d_w;
             b_q_r   <= b_d_w;
             c_q_r   <= c_d_w;
@@ -110,7 +116,7 @@ module sha256_block (
     //==============================================================//
     // Output                                                       //
     //==============================================================//
-    assign Hash_valid_o = round_r == 64;
+    assign Hash_valid_o = (round_r == 7'd64);
     assign Hash_o = {
         H0_INIT + a_q_r,
         H1_INIT + b_q_r,
